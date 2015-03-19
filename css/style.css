@@ -1,0 +1,334 @@
+/********************************
+ * Basic Styles
+ ********************************/
+
+* { box-sizing: border-box;}
+body {
+  margin: 0;
+	background: #222;
+}
+
+
+.wrapper {
+	max-width: 1000px;
+  min-width: 740px;
+	margin: 0 auto;
+	padding-top: 10px;
+	
+
+}
+.content {
+	//min-height: 400px;
+	
+	background: #62a100;
+}
+
+.colorStrip {
+	width: 100%;
+	height: 14px;
+	background: sienna;
+  margin-right: 0;
+  padding: 0;
+}
+.colorStripSection {
+  width: 16.6666666%;
+  margin: 0;
+  padding: 0;
+  height: 14px;
+  display: inline-block;
+  //background: royalblue;
+}
+.cBlue {
+  background: #3374bc;
+}
+.cGreen {
+  background: #62a100;
+}
+.cPink {
+  background: #ff6579;
+}
+.cOrange {
+  background: #ff6e1d;
+}
+.cRed {
+  background: #d93c00;
+}
+.cPurple {
+  background: #9841a3;
+}
+
+.thought {
+	display: none;
+	top: 100px;
+}
+
+/********************************
+ * Heading Styles
+ ********************************/
+h1 {
+	font-size: 3em;
+	margin: 0px;
+}
+.subHeading {
+	margin-top: 5px;
+}
+.heading {
+	//margin-top: 20px;
+//	margin-bottom: 80pxl;
+	width: 100%;
+	padding: 40px;
+	display: block;
+	//color: white;
+  color: #f1f1f1;
+  background: #323232; //darkgrey
+  //background: tomato;
+  //background: #62a100; //green
+  overflow: hidden;
+  //border-style: solid;
+
+	
+}
+.headingText {
+  padding: 20px;
+	width: 60%;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 8px;
+  //background: #686868;
+
+}
+
+
+.headPic {
+	float: right;
+	width: 150px;
+	height: 150px;
+  border-radius: 100px;
+
+}
+
+/********************************
+ * Button Styles
+ ********************************/
+
+.buttonStrip {
+	display: block;
+	clear: both;
+	width: 100%;
+	padding: 10px 40px ;
+  //background: #3374bc;
+//	margin: 20px auto;
+}
+
+.buttonStrip button {
+//	min-width: 60px;
+	height: 40px;
+	width: 29.9%;
+	margin-left: 2.1525%;
+	margin-right: 2.1525%;
+  //width: 240px;
+  //margin-left: 20px;
+  //margin-right: 20px;
+	border-style: none;
+	border-radius: 40px;
+
+	display: inline-block;
+
+  background: #323232;
+  color: white;
+  font-weight: bold;
+	
+	
+}
+
+.buttonStrip>button:nth-child(1) {
+	margin-left: 0;
+}
+
+.buttonStrip>button:nth-child(3) {
+	margin-right: 0;
+}
+
+button:hover {
+  
+  background: tomato;
+  color: #323232;
+  transition-duration: 0.25s;
+}
+button {
+  transition-duration: 0.25s;
+}
+
+.buttonStripz {
+	margin: 0;
+	padding: 0;
+  display: inline-block;
+	list-style-type: none;
+	width: 100%;
+	padding: 10px 40px ;
+  background: #262626;
+}
+
+.buttonStripz > li {
+	display: inline;
+
+ 	
+	width: 29.9%;
+	margin-left: 2.1525%;
+	margin-right: 2.1525%; 
+}
+
+
+.buttonStripz>li:nth-child(1) {
+	margin-left: 0;
+}
+
+.buttonStripz>li:nth-child(3) {
+	margin-right: 0;
+}
+
+
+.buttonStripz>li>a {
+  // 40 - 18 (font height) = 22 / 2 = 11;
+	padding: 11px 0;
+	width: 29.9%;
+	border-style: none;
+	border-radius: 40px;
+	display: inline-block;
+
+  background: #323232;
+
+	color: white;
+  font-weight: bold;
+	text-align: center;
+	transition-duration: 0.25s;
+}
+
+.buttonStripz > li > a:hover {
+	padding: 11px;
+	//background: tomato;
+  //green
+  //background: #119d8b; 
+  background:  #ff6e1d;
+  color: #323232;
+  transition-duration: 0.25s;
+}
+
+
+
+/********************************
+ * Project Styles
+ ********************************/
+.projects {
+  
+  background: #464646;
+  overflow: hidden;
+  color: #f1f1f1;
+}
+.project {
+  padding: 40px;
+}
+.project.alt {
+  background: #606060;
+}
+h4 {
+  //color: white;
+  //padding: 10px 0;
+ 
+}
+
+.project>img {
+  width: 30%;
+  float: left;
+  //height: 225px;
+}
+.projectTexts {
+  float: right;
+  width: 60%;
+
+}
+
+.project img {
+	border-style: solid;
+	border-width: 4px;
+	border-color: #999;
+	border-radius: 4px;
+}
+
+
+
+
+/*
+ * .buttonStrip>li {
+	display: inline-block;
+	padding: 20px;
+	color: white;
+	transition-duration: 0.25s;
+}
+
+.buttonStrip>li:nth-child(1) {
+	margin-left: 0;
+}
+
+.buttonStrip>li:nth-child(3) {
+	margin-right: 0;
+}
+
+.buttonStrip>li:hover {
+  background: tomato;
+  color: #323232;
+  transition-duration: 0.25s;
+}
+
+
+  <ul class="buttonStrip">			
+		<li><a href="#">Projects</a></li>
+		<li><a href="#">About Me</a></li>
+		<li><a href="#">Hello</a></li>
+</ul>
+
+
+*/
+
+a {
+	text-decoration: none;
+	color: #2f2f2f;
+}
+
+
+
+/********************************
+ * Footer Styles
+ ********************************/
+
+.footer {
+  width: 100%;
+  padding: 2px 40px;
+  background: #323232;
+  clear: both;
+  color: #f1f1f1;
+}
+.footer>p {
+ // padding: 10px 0;
+}
+
+
+
+
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+/********************************
+ * About Styles
+ ********************************/
+
+.getInTouch {
+	list-style: none;
+	padding-left: 0;
+}
+
