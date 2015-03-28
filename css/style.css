@@ -14,6 +14,8 @@ body {
   min-width: 740px;
 	margin: 0 auto;
 	padding-top: 10px;
+
+	
 	
 
 }
@@ -331,4 +333,29 @@ a {
 	list-style: none;
 	padding-left: 0;
 }
+body, html {
+	height: 100%;
+
+}
+.coverWrapper {
+	min-height: 100%;
+  height: auto !important;
+	height: 100%;	
+}
+.coverHeading {
+	position: absolute;
+	width: 100%;
+
+	padding: 40px;
+	display: block;
+  color: #f1f1f1;
+  background: #323232; //darkgrey
+  overflow: hidden;
+	
+}
+
+
+
+
+
 
