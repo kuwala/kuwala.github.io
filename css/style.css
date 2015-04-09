@@ -14,8 +14,6 @@ body {
   min-width: 740px;
 	margin: 0 auto;
 	padding-top: 10px;
-
-	
 	
 
 }
@@ -38,6 +36,7 @@ body {
   padding: 0;
   height: 14px;
   display: inline-block;
+  float: left;
   //background: royalblue;
 }
 .cBlue {
@@ -109,6 +108,26 @@ h1 {
 
 }
 
+
+/********************************
+ * Heading Effects Styles
+ ********************************/
+
+.cursor {
+  animation: blink-empty 1s infinite;
+  -webkit-animation: blink-empty 1s infinite;
+  border-right: transparent solid 2px;
+  display: inline-block;
+}
+@keyframes blink-empty {
+  50% {border-right: 2px solid #fff;
+  }
+}
+
+@-webkit-keyframes blink-empty {
+    50% {border-right: 2px solid #fff;
+  }
+}
 /********************************
  * Button Styles
  ********************************/
@@ -208,9 +227,6 @@ button {
 
 .buttonStripz > li > a:hover {
 	padding: 11px;
-	//background: tomato;
-  //green
-  //background: #119d8b; 
   background:  #ff6e1d;
   color: #323232;
   transition-duration: 0.25s;
@@ -333,29 +349,5 @@ a {
 	list-style: none;
 	padding-left: 0;
 }
-body, html {
-	height: 100%;
-
-}
-.coverWrapper {
-	min-height: 100%;
-  height: auto !important;
-	height: 100%;	
-}
-.coverHeading {
-	position: absolute;
-	width: 100%;
-
-	padding: 40px;
-	display: block;
-  color: #f1f1f1;
-  background: #323232; //darkgrey
-  overflow: hidden;
-	
-}
-
-
-
-
 
 
