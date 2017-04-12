@@ -1,9 +1,5 @@
 # Danny's Site 2017
 This [site](https://kuwala.github.io) is a place to share my text files, images, and collections.
-I want to share them in a fun and interesting way. Using games and
-interactivity I want to further study the way people can interact
-and control a ~~website~~ digital portfolio with novel and unusual ways.
-It should be a delightful and inspiring experience.
 
 ## Personal goals
 * Minimal viable product
@@ -13,10 +9,17 @@ It should be a delightful and inspiring experience.
 * Make it a tool and a toy
 
 ## Site goals
+<<<<<<< HEAD
 * ~~Fix my 2015/2016 Site and archive it.~~
 * Import its style for 2017.
 * Use grids for 2017 layout
 * Use new technologies and standards : Sass, TS
+=======
+* Fix my 2015/2016 Site and archive it.
+* Import its style for 2017.
+* Use grids for 2017 layout
+* Use new technologies and standards
+>>>>>>> b71e126af93c16a9f278d844fba13fb119acd64e
 * block out the site as simple as possible
 
 ## Content goals
