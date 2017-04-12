@@ -1,9 +1,5 @@
 # Danny's Site 2017
 This [site](https://kuwala.github.io) is a place to share my text files, images, and collections.
-I want to share them in a fun and interesting way. Using games and
-interactivity I want to further study the way people can interact
-and control a ~~website~~ digital portfolio with novel and unusual ways.
-It should be a delightful and inspiring experience.
 
 ## Personal goals
 * Minimal viable product
