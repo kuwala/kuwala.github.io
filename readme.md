@@ -12,7 +12,7 @@ This [site](https://kuwala.github.io) is a place to share my text files, images,
 * ~~Fix my 2015/2016 Site and archive it.~~
 * Import its style for 2017.
 * Use grids for 2017 layout
-* Use new technologies and standards : Sass, TS
+* Use new technologies and standards
 * block out the site as simple as possible
 
 ## Content goals
