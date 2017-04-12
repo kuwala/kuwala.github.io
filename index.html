@@ -1,59 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Hi I'm Daniel</title>
-<link rel="stylesheet" href="css\normalize.css">
-<link rel="stylesheet" href="css\style.css">
-<script type="text/javascript">
-	window.location = "./snake/";
-</script>
-</head>
-<body>
-<div class="wrapper">
-	<div class="colorStrip">
-    <div class="colorStripSection cBlue"></div><div class="colorStripSection cGreen"></div><div class="colorStripSection cPink"></div><div class="colorStripSection cOrange"></div><div class="colorStripSection cRed"></div><div class="colorStripSection cPurple"></div>
-	</div>
-		<div class="heading">
+  <head>
+    <link rel="stylesheet" href="css\normalize.css">
+    <link rel="stylesheet" href="css\style.css">
+    <meta charset="utf-8">
+    <title>DankyApp</title>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <h1>New site coming soon</h1>
+    <p>.....Redirecting to old site.....</p>
 
-		<img class="headPic" src="img/head.jpg">
-		<div class="headingText">
-			<h1>About Daniel</h1>
-      <h3 class="subHeading" >email: smolentd@gmail.com</h2>
-
-		</div>
-
-	</div> <!-- /content -->
-
-		<ul class="buttonStripz">
-			<li><a href="projects.html">Projects</a></li>
-			<li><a href="#">About Me</a></li>
-			<li><a href="#">Hello</a></li>
-		</ul>
-  <section class="projects">
-			<div class="project clearfix">
-        <img src="img/daniel.jpg">
-        <div class="projectTexts">
-          <h2>General Information</h2>
-          <p>
-					I currently work at the MHCC Print Shop as a Print and Bindery Specialist. I ocationaly fill in the office taking calls and processing job orders. My real passion is making things. Fun things. Sometimes they are small and quirky doodles in my sketchbook and other times I experiment with electronic, program, and even music.
-          </p>
-					<h3>Get In Touch</h3>
-					<ul class="getInTouch">
-						<li>(503) 765-9392</li>
-						<li>smolentd@gmail.com</li>
-						<li>@kuwala</li>
-					</ul>
-        </div>
-      </div>
-
-    </section>
-
-    <div class="footer">
-    <p> Made by Daniel Smolentsev. </p>
-    </div>
-    <div class="colorStrip">
-    <div class="colorStripSection cBlue"></div><div class="colorStripSection cGreen"></div><div class="colorStripSection cPink"></div><div class="colorStripSection cOrange"></div><div class="colorStripSection cRed"></div><div class="colorStripSection cPurple"></div>
-	</div>
-</div>
-</body>
+    <script type="text/javascript">
+      $( document ).ready (function() {
+        window.setTimeout(function () {
+          location.href = "/2016";
+        }, 2000);
+        console.log("working");
+      });
+    </script>
+  </body>
 </html>
