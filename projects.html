@@ -5,6 +5,7 @@
     <title>Hi I'm Daniel</title>
     <script src="js/react.js"></script>
     <script src="js/JSXTransformer.js"></script>
+    <script src="js/helloClick.js" charset="utf-8"></script>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -24,7 +25,7 @@
         <div class="headingText">
           <h1>Hi I'm Daniel</h1>
             <div id="randHeading"></div>
-          
+
         </div>
       </div>
       <!-- /content -->
@@ -36,7 +37,7 @@
           <a href="about.html">About Me</a>
         </li>
         <li>
-          <a href="#">Hello</a>
+          <a href="#" onclick="helloClick()">Hello</a>
         </li>
       </ul>
       <section class="projects">
@@ -63,7 +64,7 @@
           <div class="projectTexts">
             <h4>Duck Jump - The Tiniest Game</h4>
             <p>
-            Duck Jump my current project is a really simple game. Press the button to jump over bad guys. That's it. Its simplicity lets me focus on making it the fullest juiciest little thing possible. 
+            Duck Jump my current project is a really simple game. Press the button to jump over bad guys. That's it. Its simplicity lets me focus on making it the fullest juiciest little thing possible.
           </p>
           </div>
         </div>
@@ -77,7 +78,7 @@
         </div>
       </section>
       <div class="footer">
-        <p> Made by Daniel Smolentsev. </p>
+        <p> ⅚ Made by Daniel Smolentsev. </p>
       </div>
       <div class="colorStrip">
         <div class="colorStripSection cBlue"></div>
@@ -88,7 +89,7 @@
         <div class="colorStripSection cPurple"></div>
       </div>
     </div>
-		<script type="text/jsx"> 
+		<script type="text/jsx">
 /* * * * * * * * * * * * * * * * * * * * * * *
 / By: Daniel  @kuwala 03/27/15
 / Heading Randamizer: Types a subheading one
@@ -130,7 +131,7 @@ var RandomHeading = React.createClass({
         break;
       default:
     }
-    
+
     this.updateText();
   },
   waitFunc: function() {
@@ -148,7 +149,7 @@ var RandomHeading = React.createClass({
     } else {
       this.setState({listIndex: 0});
     }
-    
+
   },
   pickRandHeading: function() {
     var randIndex = Math.floor(Math.random() * this.state.listOfLikes.length );
@@ -166,8 +167,8 @@ var RandomHeading = React.createClass({
       this.setState({fsmState: 'wait'});
     }
     //console.log(this.state.charIndex);
-    
-    
+
+
   },
   eraseText: function() {
     /*
@@ -199,10 +200,9 @@ var RandomHeading = React.createClass({
 
 React.render(<RandomHeading  />, randHeading );
 
-		
+
 		</script>
 		<!--<script type="text/jsx" src="js/app.js"></script>-->
   </body>
 
 </html>
-
