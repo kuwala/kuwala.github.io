@@ -14,12 +14,12 @@ body {
   min-width: 740px;
 	margin: 0 auto;
 	padding-top: 10px;
-	
+
 
 }
 .content {
 	//min-height: 400px;
-	
+
 	background: #62a100;
 }
 
@@ -71,7 +71,7 @@ h1 {
 	margin: 0px;
 }
 .subHeading {
-	margin-top: 5px;
+	/*margin-top: 5px;*/
 }
 .heading {
 	//margin-top: 20px;
@@ -87,14 +87,14 @@ h1 {
   overflow: hidden;
   //border-style: solid;
 
-	
+
 }
 .headingText {
-  padding: 20px;
-	width: 60%;
-  border-style: solid;
-  border-width: 3px;
-  border-radius: 8px;
+  /*padding: 20px;*/
+	/*width: 60%;*/
+  /*border-style: solid;*/
+  /*border-width: 3px;*/
+  /*border-radius: 8px;*/
   //background: #686868;
 
 }
@@ -158,8 +158,8 @@ h1 {
   background: #323232;
   color: white;
   font-weight: bold;
-	
-	
+
+
 }
 
 .buttonStrip>button:nth-child(1) {
@@ -171,7 +171,7 @@ h1 {
 }
 
 button:hover {
-  
+
   background: tomato;
   color: #323232;
   transition-duration: 0.25s;
@@ -193,10 +193,10 @@ button {
 .buttonStripz > li {
 	display: inline;
 
- 	
+
 	width: 29.9%;
 	margin-left: 2.1525%;
-	margin-right: 2.1525%; 
+	margin-right: 2.1525%;
 }
 
 
@@ -238,7 +238,7 @@ button {
  * Project Styles
  ********************************/
 .projects {
-  
+
   background: #464646;
   overflow: hidden;
   color: #f1f1f1;
@@ -252,7 +252,7 @@ button {
 h4 {
   //color: white;
   //padding: 10px 0;
- 
+
 }
 
 .project>img {
@@ -299,7 +299,7 @@ h4 {
 }
 
 
-  <ul class="buttonStrip">			
+  <ul class="buttonStrip">
 		<li><a href="#">Projects</a></li>
 		<li><a href="#">About Me</a></li>
 		<li><a href="#">Hello</a></li>
@@ -333,11 +333,11 @@ a {
 
 
 
-.clearfix:after { 
-   content: "."; 
-   visibility: hidden; 
-   display: block; 
-   height: 0; 
+.clearfix:after {
+   content: ".";
+   visibility: hidden;
+   display: block;
+   height: 0;
    clear: both;
 }
 
@@ -349,5 +349,3 @@ a {
 	list-style: none;
 	padding-left: 0;
 }
-
-

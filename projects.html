@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <title>Hi I'm Daniel</title>
+    <title>Daniel's Projects</title>
     <script src="js/react.js"></script>
     <script src="js/JSXTransformer.js"></script>
     <script src="js/helloClick.js" charset="utf-8"></script>
@@ -23,7 +23,7 @@
       <div class="heading">
         <img class="headPic" src="img/head.jpg" />
         <div class="headingText">
-          <h1>Hi I'm Daniel</h1>
+          <h1>Daniel's Projects</h1>
             <div id="randHeading"></div>
 
         </div>
@@ -37,7 +37,7 @@
           <a href="about.html">About Me</a>
         </li>
         <li>
-          <a href="#" onclick="helloClick()">Hello</a>
+          <a href="blog.html">Blog</a>
         </li>
       </ul>
       <section class="projects">
@@ -99,8 +99,8 @@
 
 var RandomHeading = React.createClass({
   getInitialState: function() {
-    return { listOfLikes: ['to make fun things', 'to write juicy code', 'to explore the woods', 'to solder wires',
-    'to pet animals', 'to draw doodles'], text: '', charIndex:0, listIndex: 0,
+    return { listOfLikes: ['arduino boards', 'my phone as a field recorder', 'unicode [][][]', 'vim commands in atom',
+    'sketchbooks for prototyping', 'tape to fix problems quickly', 'my computer like a paintbrush'], text: '', charIndex:0, listIndex: 0,
     fsmState: 'draw', waitCounter: 0, waitTicks: 14 };
   },
   componentDidMount: function() {
@@ -192,7 +192,7 @@ var RandomHeading = React.createClass({
   render: function() {
     return (
       <div>
-      <h3 className="cursor">I like {this.state.text}</h3>
+      <h3 className="cursor">I use {this.state.text}</h3>
       </div>
     );
   }

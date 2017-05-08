@@ -2,6 +2,8 @@
 <html>
 <head>
 <title>Hi I'm Daniel</title>
+<script src="js/react.js"></script>
+<script src="js/JSXTransformer.js"></script>
 <link rel="stylesheet" href="css\normalize.css">
 <link rel="stylesheet" href="css\style.css">
 </head>
@@ -11,11 +13,11 @@
     <div class="colorStripSection cBlue"></div><div class="colorStripSection cGreen"></div><div class="colorStripSection cPink"></div><div class="colorStripSection cOrange"></div><div class="colorStripSection cRed"></div><div class="colorStripSection cPurple"></div>
 	</div>
 		<div class="heading">
-		<img class="headPic" src="img/FaceA_300W.png">
+		<!-- <img class="headPic" src="img/FaceA_300W.png"> -->
 		<div class="headingText">
-			<h1>About Daniel</h1>
-      <h3 class="subHeading" >email: smolentd@gmail.com</h2>
-
+			<h1>Hi im Daniel</h1>
+      <!-- <h3 class="subHeading" >email: smolentd@gmail.com</h2> -->
+        <div id="randHeading"></div>
 		</div>
 
 	</div> <!-- /content -->
@@ -23,19 +25,19 @@
 		<ul class="buttonStripz">
 			<li><a href="projects.html">Projects</a></li>
 			<li><a href="#">About Me</a></li>
-			<li><a href="#">Hello</a></li>
+			<li><a href="blog.html">Hello</a></li>
 		</ul>
   <section class="projects">
 
 			<div class="project clearfix">
         <img src="img/daniel.jpg">
         <div class="projectTexts">
-          <h2>General Information</h2>
+          <h1>General Information</h1>
           <p>
-						Hi I'm Daniel a new media and interactions artist. I explore technology and new
-						emerging tools. In what ways can they be used for fun, work, or self improvement? What
+						Hi I'm Daniel a new media and interactions artist. I explore technology, new communication mediuma,
+						 and software tools. In what ways can they be used for fun, work, or self improvement? What
 						makes an instrument a loved tool, and what makes it a toy? I study and
-						create with embedded electronics, drawings, games, ideas, <a href="https://soundcloud.com/kuwala/tracks">audible</a> and <a href="https://www.youtube.com/user/kuwala">vis</a><a href="https://www.pscp.tv/kuwala">ual</a> <a href="https://vr.google.com/vrphoto/AIJsmdlaXmcIbVj4Jw2i_U-Fb9KnkfW69OkRDJ0O8ufqPhyqA4qMCaYPrHtX3XH1AcxRZtcL9fUf0v11VcezAUEWxkfHyfXF1ubfkF547YR4Cr35ILNm4jF1K0YA02ORe5MuK8mpNn1sPK00oJaIah4VmKZMAvKzGItwDWaDSFsqx5ihD_HZ3QbwpALUPIzjQ36VczGiKSt5fe3ddq7x5UNDcpzD4CrnJ0liTk5lp0zPuRC-xZv8CeN5BirPJM3dphb9g2oUQbtGoEXHAF66FEjLiNkiR7U5JWefVM3hQULzJ_BJYzidGIFlxLPNbRP4DBjpqM3bfzakyjfECdGZ">medias</a>.
+						create with embedded electronics, drawings, games, ideas, <a href="https://soundcloud.com/kuwala/tracks">audible</a> and <a href="https://www.youtube.com/user/kuwala">vis</a><a href="https://www.pscp.tv/kuwala">ual</a> medias.
 						Nothing is off limits, everything should be questioned, pushed to its extremes,
 						mixed with others, and allowed to evolve into a better thing. Just like self
 						improvement our instruments beg to be used, loved, and ultimately improved by the
@@ -60,11 +62,124 @@
     </section>
 
     <div class="footer">
-    <p> ↂ Made by Daniel Smolentsev. </p>
+    <p> Made by Daniel Smolentsev. </p>
     </div>
     <div class="colorStrip">
     <div class="colorStripSection cBlue"></div><div class="colorStripSection cGreen"></div><div class="colorStripSection cPink"></div><div class="colorStripSection cOrange"></div><div class="colorStripSection cRed"></div><div class="colorStripSection cPurple"></div>
 	</div>
 </div>
+<script type="text/jsx">
+/* * * * * * * * * * * * * * * * * * * * * * *
+/ By: Daniel  @kuwala 03/27/15
+/ Heading Randamizer: Types a subheading one
+/ letter at a time then picks a new heading from
+/ a list of headings. Now with blinking cursor!
+ * * * * * * * * * * * * * * * * * * * * * * */
+
+var RandomHeading = React.createClass({
+  getInitialState: function() {
+    return { listOfLikes: ['to make fun things', 'to write juicy code', 'to explore the woods', 'to solder wires',
+    'to pet animals', 'to draw doodles'], text: '', charIndex:0, listIndex: 0,
+    fsmState: 'draw', waitCounter: 0, waitTicks: 14 };
+  },
+  componentDidMount: function() {
+    this.interval = setInterval(this.update, 150);
+  },
+  componentWillUnmount: function() {
+    clearInterval(this.interval);
+  },
+  update: function() {
+    //console.log("update called");
+    switch(this.state.fsmState) {
+      case 'start':
+        //console.log("fsm start");
+        break;
+      case 'pick':
+        //this.pickRandHeading();
+        this.pickNextHeading();
+        this.setState({fsmState: 'draw'})
+        break;
+      case 'draw':
+        this.drawText();
+        break;
+      case 'wait':
+        this.waitFunc();
+        break;
+      case 'erase':
+        this.eraseText();
+        break;
+      default:
+    }
+
+    this.updateText();
+  },
+  waitFunc: function() {
+    if (this.state.waitCounter < this.state.waitTicks) {
+      this.setState({waitCounter: this.state.waitCounter + 1});
+    } else {
+      this.setState({waitCounter: 0});
+      this.setState({fsmState: 'erase'});
+    }
+
+  },
+  pickNextHeading: function() {
+    if(this.state.listIndex < this.state.listOfLikes.length -1) {
+      this.setState({listIndex: this.state.listIndex + 1});
+    } else {
+      this.setState({listIndex: 0});
+    }
+
+  },
+  pickRandHeading: function() {
+    var randIndex = Math.floor(Math.random() * this.state.listOfLikes.length );
+    this.setState({listIndex: randIndex})
+    //this.update();
+    this.setState({charIndex: 0});
+  },
+  drawText: function() {
+    var index = this.state.listIndex;
+    if (this.state.charIndex < this.state.listOfLikes[index].length) {
+      this.setState({charIndex: this.state.charIndex + 1});
+    } else {
+      // reset the text index and change state to erase
+      //this.setState({charIndex: 0});
+      this.setState({fsmState: 'wait'});
+    }
+    //console.log(this.state.charIndex);
+
+
+  },
+  eraseText: function() {
+    /*
+    // Erase one letter at a time
+    var index = this.state.listIndex;
+    if (this.state.charIndex > 0) {
+      this.setState({charIndex: this.state.charIndex - 1});
+    } else {
+      this.setState({fsmState: 'pick'});
+    } */
+    this.setState({charIndex: 0});
+    this.setState({fsmState: 'pick'});
+  },
+  updateText: function() {
+    //update the text string
+    var index = this.state.listIndex;
+    var heading = this.state.listOfLikes[index];
+    var newText = heading.substring(0, this.state.charIndex);
+    this.setState({text: newText});
+  },
+  render: function() {
+    return (
+      <div>
+      <h3 className="cursor">I like {this.state.text}</h3>
+      </div>
+    );
+  }
+});
+
+React.render(<RandomHeading  />, randHeading );
+
+
+		</script>
 </body>
 </html>
