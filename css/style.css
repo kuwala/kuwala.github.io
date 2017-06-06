@@ -282,7 +282,7 @@ h4 {
   /*display: block;*/
   //height: 225px;
 }
-.projectTexts>img {
+.projectTexts img {
   width: 48%;
 }
 .projectTexts {
@@ -295,6 +295,7 @@ h4 {
 	/*border-style: solid;*/
 	/*border-width: 4px;*/
 	/*border-color: #999;*/
+  /*width: 48%;*/
 	border-radius: 4px;
   /*display: block;*/
 }
