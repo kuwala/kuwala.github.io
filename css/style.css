@@ -375,3 +375,30 @@ p>a {
 	list-style: none;
 	padding-left: 0;
 }
+
+
+/********************************
+ * Animations Lool
+ ********************************/
+ .wtf {
+   positon: relative;
+   border: solid red;
+   -webkit-animation: move_eye 5s infinite;
+ }
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+
+  0% { -webkit-transform: translate(100px) rotate(20deg);}
+  100% {-webkit-transform: translate(100px) rotate(20deg);}
+}
+@-webkit-keyframes move_eye { from { -webkit-transform: rotate(0deg); } to { -webkit-transform: rotate(350deg); }  }
+
+@keyframes rotateWordsFirst {
+    0% { opacity: 1; transform: rotate(45deg); }
+    8% { opacity: 1; height: 60px; }
+    19% { opacity: 1; height: 60px; }
+	25% { opacity: 0; height: 60px; }
+    100% { opacity: 0; }
+}
