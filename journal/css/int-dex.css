@@ -1,0 +1,13 @@
+.bg-screenshot2 {
+  background-image: url(../img/iterm-on-left.jpg);
+}
+.bg-screenshot {
+  background-image: url(../img/int-dex-screenshot.jpg);
+  background-position: 60px 180px;
+}
+.min-height-box {
+  min-height: 600px;
+}
+.pad-top {
+  padding-top: 200px;
+}
