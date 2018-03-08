@@ -25,7 +25,9 @@ function bouncyRect() {
 
 }
 
-
+function mousePressed() {
+  grid = new Grid();
+}
 function draw() {
   grid.draw();
 
