@@ -1,5 +1,6 @@
 var grid;
 var snake;
+var paused = false;
 function setup() {
   cnvs = createCanvas(512,512);
   cnvs.parent("p5Canvas");
@@ -10,10 +11,14 @@ function setup() {
   frameRate(16);
 }
 function draw() {
-  background(50);
-  snake.update(grid);
-  grid.draw();
-  game.update(snake);
+  if (paused) {
+    //haha paused do nothing
+  } else {
+    background(50);
+    snake.update(grid);
+    grid.draw();
+    game.update(snake);
+  }
 }
 function keyPressed(key) {
   // no running into your self
@@ -44,6 +49,9 @@ function keyPressed(key) {
   if (keyCode === 32) {
     console.log("spaced");
     snake.toggleDraw();
+  }
+  if (keyCode === ENTER) {
+    paused = !paused;
   }
   // console.log(key);
 
