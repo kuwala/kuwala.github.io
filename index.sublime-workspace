@@ -1,0 +1,237 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"LED1",
+				"LED1PIN1"
+			],
+			[
+				"sata",
+				"saturationMin"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Processing/Build Systems/Processing.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					""
+				],
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					"Re-run sketch"
+				],
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					"Run sketch (Processing 3 only)"
+				],
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					"Run sketch fullscreen"
+				],
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					"Export sketch as application"
+				],
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					"Kill running sketches"
+				]
+			],
+			[
+				"Packages/Processing/Build Systems/Processing.sublime-build",
+				"Run sketch (Processing 3 only)"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				"",
+				"Set Syntax: Groovy"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/daniel2k18/LEDWallVisuals/Archive/Flocking_Test/Vehicle.pde",
+		"/Users/daniel2k18/LEDWallVisuals/Archive/Flocking_Test/Flocking_Test.pde",
+		"/Users/daniel2k18/Documents/Arduino/ardreame-archive/RoomLights_Improved/RoomLights_Improved.ino",
+		"/Users/daniel2k18/Documents/processing-sketches/NatureOfCode_Autonomous/Autonomous1/Autonomous1.pde",
+		"/Users/daniel2k18/Documents/Arduino/mirror_tunnel_leds/src/Mirror_Tunnel/Mirror_Tunnel.ino",
+		"/Users/daniel2k18/Documents/Arduino/mirror_tunnel_leds/src/Mirror_Tunnel_2D/Mirror_Tunnel_2D.ino",
+		"/Users/daniel2k18/Documents/Arduino/ardreame-archive/idiot_son/idiot_son.ino",
+		"/Users/daniel2k18/Documents/processing-sketches/langtons_ant_extra2/langtons_ant_extra2.pde",
+		"/Users/daniel2k18/Documents/kuwala.github.io/blog.html",
+		"/Users/daniel2k18/Documents/Arduino/mirror_tunnel_leds/src/Control_Panel_Tests/Control_Panel_Tests.ino",
+		"/Users/daniel2k18/Documents/Arduino/mirror_tunnel_leds/src/Mirror_Tunnel/MidiKeys.h",
+		"/Users/daniel2k18/Documents/Arduino/mirror_tunnel_leds/src/Mirror_Tunnel/PatternPulse.h",
+		"/Users/daniel2k18/Documents/Arduino/mirror_tunnel_leds/src/Mirror_Tunnel/PatternPulse.cpp",
+		"/Users/daniel2k18/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/daniel2k18/Library/Application Support/Sublime Text 3/Packages/User/Default.sublime-keymap",
+		"/Users/daniel2k18/Desktop/   3/kjcflkj",
+		"/Users/daniel2k18/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 497.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 49.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 136.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 68.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 246.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -3,13 +3,13 @@ var snake;
 var paused = false;
 var vants = new Array();
 function setup() {
-  cnvs = createCanvas(400,400);
+  cnvs = createCanvas(1000,1000);
   cnvs.parent("p5Canvas");
-  grid = new Grid(40,40);
-  vant = new Vant(40,40,grid);
+  grid = new Grid(60,60);
+  vant = new Vant(60,60,grid);
   vants.push(vant);
-  //snake = new Snake();
-  //game = new SnakeGame();
+  snake = new Snake();
+  game = new SnakeGame();
   noStroke();
   // frameRate(16);
 }

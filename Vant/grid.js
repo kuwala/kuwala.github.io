@@ -5,6 +5,7 @@ function Grid(gridRows, gridCols) {
   this.cols = gridCols;
   this.rows = gridRows;
   this.foodCount = 4;
+  this.graphic = createGraphics(gridCols,gridRows);
   this.setCellColor = function(j, i, col) {
     this.cells[j + i * this.cols].c = col;
   }
@@ -67,6 +68,44 @@ function Grid(gridRows, gridCols) {
     } else if (cell.x < 0) {
       cell.x = grid.cols - 1;
     }
+  }
+  this.draw2 = function () {
+    for(var i = 0; i < this.rows; i ++) {
+      for (var j = 0; j < this.cols; j++) {
+        // Get the color of the cell
+        var cCell = this.cells[j+i*this.cols];
+        var col = this.cells[j+i*this.cols].t;
+        if (col===0) {
+          // fill(color(255));
+          this.graphic.stroke(255);
+          this.graphic.point(j,i);
+          // fill(color(0));
+          rect(this.cellSize * j, this.cellSize * i, this.cellSize, this.cellSize);
+        } else if (col===1) {
+          // fill(color(0));
+          // fill(cCel.c);
+          // rect(this.cellSize * j, this.cellSize * i, this.cellSize, this.cellSize);
+          this.graphic.stroke(0);
+          this.graphic.point(j,i);
+        } else if (col===2) {
+          // fill(color(0));
+          // rect(this.cellSize * j, this.cellSize * i, this.cellSize, this.cellSize);
+          // fill(cCell.c);
+          // // ellipseMode(CORNER);
+          // var x = this.cellSize * j + this.cellSize / 3*1.5;
+          // var y = this.cellSize * i + this.cellSize / 3*1.5;
+          // var size = this.cellSize / 1.5;
+          // ellipse(x,y,size,size);
+          this.graphic.stroke(127);
+          this.graphic.point(j,i);
+        }
+        image(this.graphic,0,0,this.cols*this.cellSize,this.rows*this.cellSize);
+        image(this.graphic,0,0);
+        // strokeWeight(2);
+        // stroke(color(20,20,20));
+      }
+    }
+
   }
 
 
