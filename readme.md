@@ -1,6 +1,13 @@
 # Danny's Site 2017
 This [site](https://kuwala.github.io) is a place to share my text files, images, and collections.
 
+## Site is old
+* redacting some comfusing info
+* redacting some other info
+* the site whats to be reborn
+* decomission the bloated JS
+
+
 ## Personal goals
 * Minimal viable product
 * Use my site as much as possible
